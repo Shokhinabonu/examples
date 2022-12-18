@@ -69,6 +69,12 @@ Node<T> *LinkedList<T>::get_node(size_t idx)
 }
 
 // submit this
+
+
+template <typename T>
+	LinkedList<T>::~LinkedList(){}
+
+
 template <typename T>
 void LinkedList<T>::insert(size_t pos, T item)
 {
@@ -79,7 +85,7 @@ void LinkedList<T>::insert(size_t pos, T item)
 
 	Node<T> *cur = head;
 	Node<T> *previous;
-	Node *new_node = new Node();
+	Node<T> *new_node = new Node<T>;
 	new_node->data = item;
 	while (pos < 0)
 	{
