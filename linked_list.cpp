@@ -70,10 +70,8 @@ Node<T> *LinkedList<T>::get_node(size_t idx)
 
 // submit this
 
-
 template <typename T>
-	LinkedList<T>::~LinkedList(){}
-
+LinkedList<T>::~LinkedList() {}
 
 template <typename T>
 void LinkedList<T>::insert(size_t pos, T item)
